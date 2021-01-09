@@ -12,14 +12,14 @@
 	</style>
 </head>
 <body>
-	<h1 >HOMME </h1>
+	<h1 >FEMME </h1>
 	<h2 ><em>Servez-vous</em></h2><br/>
 	<table width=90% cellpadding="20" >
 		<tr> <td> <img src="C:\Users\admin\Desktop\robe.jpg" ><br/><a href=url1>Robe		1000$ </a></td>
 		     <td> <img src="C:\Users\admin\Desktop\coat.jpg" ><br/><a href=url2> monteau		1500$ </a></td>
 		</tr>
 		
-		<tr><td> <img src="C:\Users\admin\Desktop\coat m.jpg"  ><br/><a href=url3>shoes		500$ </a></td>
+		<tr><td> <img src="C:\Users\admin\Desktop\shoes w.jpg"  ><br/><a href=url3>shoes		500$ </a></td>
 		    <td> <img src="C:\Users\admin\Desktop\pantalone.jpg"  ><br/><a href=url7>pantalon		700$ </a></td>
 		</tr>
 	</table>
