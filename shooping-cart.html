@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta  name=" viewport" charset="utf-8" content="width=device-width" initiale-scale=1.0>
+	<link rel="stylesheet" type="text/css" href="styleshop.css">
+    <title>Shooping cart -ASEDS SHOP| Ecomerce Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+	<div class=container>
+		<div class="navbar">
+		<div class="logo">
+			<img src="img/logo1.png" width="125px">
+        </div>
+        <nav>
+        	<ul id="MenuItems">
+        		<li> <a href="">HOME</a></li>
+        		<li> <a href="">PRODUCT</a></li>
+        		<li> <a href="">ABOUT</a></li>
+        		<li> <a href="">CONTACT</a></li>
+        		<li> <a href="">ACCOUNT</a></li>
+        	</ul>
+        </nav>
+        <img src="img/cart1.png" width="45px" height="30px" >
+        <img src="img/menu.png" class="menu-icon" onclick="menutoggle()"> 
+        <!--so important how to display an icon-->
+        
+        </div>
+    </div> 
+    </div>
+
+<!-------------------  cart items details --------so important--------------------->      
+    <div class="small-container cart-page"><!-------------9leb 3la chno kat3ni--------------->
+        <table> <!-------------9leb 3la chno kat3ni---------------->
+            <tr> <!--------------->  
+
+                <th> Product </th>
+                <th> Quality</th>
+                <th> Subtotal </th>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-1.jpg">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-3.jpg">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: $45.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$45.00</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-2.jpg">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: $75.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$75.00</td>
+
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$170.00</td>
+                </tr>
+                 <tr>
+                    <td>shiping</td>
+                    <td>$30.00</td>
+                </tr>
+                 <tr>
+                    <td>Total</td>
+                    <td>$200.00</td>
+                </tr>
+            </table>
+        </div>
+    
+    </div>
+
+<!----------------footer-------------------->       
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3> Download Our App</h3>
+                <p>Download App for Android and ios phone.</p>
+                <div class="app-logo">
+                    <img src="img/play-store.png" >
+                    <img src="img/App-store.png" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="img/logo1.png">
+                <p>OUR purpose IS To Sustainably Make the Pleasure and Benefits of Sports Accessible to Everyone.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Usefel Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Join Affiliate</li>
+                </ul>
+                
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us </h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twiter</li>
+                    <li>Instagram</li>
+                </ul>
+                
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021- G6 ASEDS INE 1</p>
+    </div>
+</div>  
+<!--js for toggle menu---- so important------>   
+   <script >
+        var MenuItems = document.getElementById("MenuItems")    
+        MenuItems.style.maxheight ="0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxheight == "0px"){
+                MenuItems.style.maxheight = "200px";
+            }
+            else{
+                MenuItems.style.maxheight = "0px";
+            }
+        }
+   </script> 
+
+
+
+    
+
+</body>
+</html>    
