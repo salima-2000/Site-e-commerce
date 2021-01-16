@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title>inscription</title>
+	<link rel="stylesheet" href="c.css">
+
+	
+	
+</head>
+<body class = "inscription">
+
+	<form id="formulaire">
+		<input type="text" id="Nom" placeholder="Nom"><br>
+		<input type="text" id="Prenom" placeholder="Prénom"><br>
+		<input type="tel"id="num" placeholder="Téléphone"><br>
+		<input type="email" id="email" placeholder="E-mail " required><br>
+		<input type="password" id="password" placeholder="Mot De Passe " pattern=(?=.*\d).{6,8} required><br>
+		<div class="msg1"></div>
+        <input type="password" id="conpassword" placeholder="Confirmation De Mot De Passe"required><br>
+		<br>
+		<div class="msg2"></div>
+		<br>
+		<button id="btn">Valider</button>
+		
+		
+	</form>
+	<script src="gest.js"></script>
+	
+	
+	
+
+</body>
+</html>
