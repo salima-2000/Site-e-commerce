@@ -1,28 +1,43 @@
 #logo{
     width: 20;
     height: 60px;
-    
+  
     
 }
 #search
 {
- width: 60%;
+ width: 50%;
  height: 50px;
- background-color: rgb(223, 221, 221);
+ 
  font-size: x-large;
  font-family: Georgia, 'Times New Roman', Times, serif;
  font-style: italic;
  border-radius: 18px;
  margin-top: 2%;
  margin-left:2% ;
+outline:none; 
+background: url('icSearch.png')  right no-repeat;
+transition :width 2s;
 
- 
 }
+#search:focus{
+    width:65%;
+
+}
+#deconn{
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+   font-weight: bolder;
+}
+
+
 nav{
     background-color:grey;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
-}
+    display:block;
+    letter-spacing: 5px;
+    
+} 
 h5{
     font-size: x-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -58,6 +73,7 @@ h2{
     font-style: italic;
     color:#FFF;
     background-color: grey;
+    text-align: center;
 }
 .nomProduit{
     font-size: xx-large;
@@ -81,6 +97,13 @@ h2{
 table{
     margin:auto;
 }
-#connection{
-    display:none;
+li:hover{
+  background-color: rgb(70, 69, 67);
+}
+
+.profile{
+   padding-right: 25px;
+}
+.profile:hover,.panier:hover{
+   color: rgb(70, 69, 67);
 }
