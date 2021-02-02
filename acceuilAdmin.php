@@ -43,7 +43,7 @@
             <tr>
                 <td>
                     <img src="C:\Users\admin\Desktop\mes tp et projets\developement web\site ecommerce dev web\accueil\gu.jfif">
-                    <a  href="utilisateurs.php"><button>Gérer les utilisateurs</button></a></br></br>
+                    <a  href="utilisateurs.php"><button>Voir les utilisateurs</button></a></br></br>
                 </td>
                 <td>
                     <img src="C:\Users\admin\Desktop\mes tp et projets\developement web\site ecommerce dev web\accueil\gu.jfif">
@@ -59,9 +59,12 @@
                 </td>
                 <td>
                     <img src="C:\Users\admin\Desktop\mes tp et projets\developement web\site ecommerce dev web\accueil\aj p.jpg">
-                    <a href="formInscr.php"><button>Ajouter un utilisateur</button></br></br></a>
+                    <a href="formInscrAdmin.php"><button>Ajouter un utilisateur</button></br></br></a>
+                    
                 </td>
-
+                <td>
+                <a href="formInscrAdmin.php"><button>Gestion des articles</button></br></br></a>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -83,6 +86,9 @@
                 <td>
                     <img src="C:\Users\admin\Desktop\mes tp et projets\developement web\site ecommerce dev web\accueil\aj p.jpg">
                     <a href="supprimerCategorie.php"><button>Supprimer une categorie</button></br></br></a>
+                </td>
+                <td>
+                <a href="formInscrAdmin.php"><button>consulter la messagerie</button></br></br></a>
                 </td>
             </tr>    
         </table>
