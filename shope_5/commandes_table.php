@@ -1,6 +1,6 @@
 <div class = "fluid-container background-h2">
 <div style="margin-top:5px;">
-<h2>commandes table</h2>
+<h2>Table de commandes</h2>
 </div>
 </div>
 
