@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Produit x</title>
+        <title>Produit</title>
         <link rel="stylesheet" href="product.css">
         <?php include 'links.php';?>
     </head>
