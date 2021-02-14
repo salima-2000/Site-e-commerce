@@ -40,7 +40,7 @@
            
            <!-- Product Color -->
            <div class="product-color">
-               <span style="font-size:20px">Color</span>
+               <span style="font-size:20px">Couleur</span>
        
                <div class="color-choose">
                  <div class="d-flex">
@@ -68,7 +68,7 @@
                     <!-- Product size -->
                   <div class="product-size">
                     
-                    <span style="font-size:20px">Size</span>
+                    <span style="font-size:20px">Taille</span>
                     <div class="size-choose">
                     <?php 
                
@@ -93,9 +93,9 @@
 
 
               <div class="product-price">
-                    <span>PriceMAD : <?php echo $product_price ?>$</span>
+                    <span>Prix : <?php echo $product_price ?>$</span>
                     <?php if($client_id!=1){ ?>
-                    <input type="submit" value="add to cart" name = "insert" class="cart-btn">
+                    <input type="submit" value="Ajouter au panier" name = "insert" class="cart-btn">
                     <?php }?>
 
               </div>
