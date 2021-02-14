@@ -7,7 +7,7 @@ if(!empty($_SESSION)){
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@ if(!empty($_SESSION)){
 <?php include 'header.php';?>
 <?php if($client_id === 1){ ?>
     <div style="margin-bottom:5%;margin-top:5%;">
-    <a style="margin-left:45%;margin-bottom:50%;" href="add_article.php" class = "text-center"><button type="button" class="btn btn-outline-secondary">add an article</button></a>
+    <a style="margin-left:45%;margin-bottom:50%;" href="add_article.php" class = "text-center"><button type="button" class="btn btn-outline-secondary">Ajouter un article</button></a>
     </div>
     <?php } ?>
 
@@ -50,7 +50,7 @@ if (mysqli_num_rows($result) > 0) {
         <img style="width: 100%;" src="<?php echo $image ?>" alt="">
         <p id="body"><?php echo $body ?></p>
         <?php if($client_id===1){ ?>
-        <button style="float:right;" class="btn btn-outline-secondary" value="<?php echo $article_id ?>" onclick="remove_article(this.value)">remove</button>
+        <button style="float:right;" class="btn btn-outline-secondary" value="<?php echo $article_id ?>" onclick="remove_article(this.value)">Supprimer</button>
         <?php  } ?>
         
 				
