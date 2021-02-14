@@ -191,7 +191,7 @@ $resulta = mysqli_query($link, $sqla);
 
 <div id="later" style="margin:10%">
   <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-		<input style="margin-top:3%;margin-bottom:1%;margin-left:30%;margin-right:30%;width: 40%;" id="new_category" type="text" placeholder="Category" ><br>
+		<input style="margin-top:3%;margin-bottom:1%;margin-left:30%;margin-right:30%;width: 40%;" id="new_category" type="text" placeholder="Catégorie" ><br>
 	</form>
   <button style="margin-left:30%;margin-right:30%;float:right;padding-left:15px;padding-right:15px;padding-top:10px;padding-bottom:10px;"  onclick="add_category()" >Ajouter une catégorie</button>
 </div>
