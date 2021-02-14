@@ -3,8 +3,8 @@
     <div class="container">
         <div class="row">
             <div class="footer-col-1">
-                <h3> Download Our App</h3>
-                <p>Download App for Android and ios phone.</p>
+                <h3> Télécharger notre app</h3>
+                <p>Télécharger l'app pour Android et iOS Phone.</p>
                 <div class="app-logo">
                     <img src="play-store.jpg" >
                     <img src="App-store.png" >
@@ -12,20 +12,20 @@
             </div>
             <div class="footer-col-2">
                 <img src="aseds.jpg">
-                <p>OUR purpose IS To Sustainably Make the Pleasure and Benefits of Sports Accessible to Everyone.
+                <p>Notre objectif est de rendre le plaisir et les avantages de la mode accessibles à tous.
                 </p>
             </div>
             <div class="footer-col-3">
-                <h3>Usefel Links</h3>
+                <h3>Liens utils</h3>
                 <ul>
                     <li>Coupons</li>
-                    <li>Blog Post</li>
-                    <li>Join Affiliate</li>
+                    <li>Blog</li>
+                    <li>Rejoindre l'affilié</li>
                 </ul>
                 
             </div>
             <div class="footer-col-4">
-                <h3>Follow us </h3>
+                <h3>Abonnez-vous </h3>
                 <ul>
                     <li>Facebook</li>
                     <li>Twiter</li>
