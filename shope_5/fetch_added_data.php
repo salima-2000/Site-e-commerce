@@ -11,7 +11,7 @@ $msg = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
+    $nameErr = "Le nom est requis";
   } else {
     $name = test_input($_POST["name"]);
   }
@@ -19,12 +19,12 @@ if (empty($_POST["name"])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["quantity"])) {
-    $quantityErr = "quantity is required";
+    $quantityErr = "La quantité est requise";
   } else {
     if(is_numeric($_POST["quantity"])){
       $quantity = test_input($_POST["quantity"]);
     } else {
-      $quantityErr = "you need to enter a number";
+      $quantityErr = "Veuillez entrer un nombre";
     }
    
   }
@@ -32,12 +32,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["price"])) {
-      $priceErr = "price is required";
+      $priceErr = "Le prix est requis";
     } else {
       if(is_numeric($_POST["price"])){
         $price = test_input($_POST["price"]);
       } else {
-        $priceErr = "you need to enter a number";
+        $priceErr = "Veuillez entrer un nombre";
       }
      
     }
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
+    $genderErr = "Le genre est requis";
   } else {
     $gender = test_input($_POST["gender"]);
   }
@@ -53,14 +53,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["color"])) {
-      $colorErr = "color is required";
+      $colorErr = "La couleur est requise";
     } else {
       $color = test_input($_POST["color"]);
     }
     }
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if (empty($_POST["size"])) {
-        $sizeErr = "size is required";
+        $sizeErr = "La taille est requise";
       } else {
         $size = test_input($_POST["size"]);
       }
@@ -93,14 +93,14 @@ if(isset($_POST["insert"]))
       mysqli_query($link, $query);
   
       if(move_uploaded_file($_FILES["image"]["tmp_name"],$target)){
-        $msg = "product added";
+        $msg = "Produit ajouté";
       }
       else{
-      $msg = "something went rong. Try again";
+      $msg = "Un problème est survenu. Veuillez réessayer";
       }      
 
      } else {
-       $msg = "product already exist";
+       $msg = "Ce produit existe déjà";
      }
 
    
