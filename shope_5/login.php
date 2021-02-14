@@ -16,7 +16,7 @@
         <div style="color:red;text-align:center"><?php echo $email_err ; ?></div><br>
         <input id="inputs" type="password" name="password" placeholder="Mot De Passe" ><br>     
         <div style="color:red;text-align:center"><?php echo $password_err ; ?></div><br>
-        <input  type="submit" value="Login" id="submit">
+        <input  type="submit" value="Se connecter" id="submit">
 		
 	</form>
     <?php include 'footer.php'; ?>
