@@ -18,21 +18,21 @@ require_once "config.php";
     <?php include 'header.php';?>
     
 <div class = "fluid-container background-h2">
-<h2>tableau de bord</h2>
+<h2>Tableau de bord</h2>
 </div>
 <div class="fluid-container" style="  background-color: white;">
   <div class="row">
   <div class="col">
   <div id="total_incomes_style">
-    <p class="bord">total income</p>
+    <p class="bord">Revenu total</p>
     <p class="bord1" id="total_incomes" ></p>
   </div>
   <div id="users_style">
-    <p class="bord" >total users</p>
+    <p class="bord" >Nombre total d'utilisateurs</p>
     <p class="bord1" id="users"><p>
   </div>
   <div id="commandes_style">
-    <p class="bord" >commandes</p>
+    <p class="bord" >Commandes</p>
     <p class="bord1" id="commandes"></p>
   </div>
   </div>
