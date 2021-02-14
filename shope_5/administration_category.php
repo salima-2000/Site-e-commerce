@@ -6,7 +6,7 @@ $msg = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (empty($_POST["name"])) {
-    $nameeErr = "Name is required";
+    $nameeErr = "Le nom est requis.";
   } else {
     $namee = test_input($_POST["name"]);
   }
@@ -14,12 +14,12 @@ if (empty($_POST["name"])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["quantity"])) {
-    $quantityeErr = "quantity is required";
+    $quantityeErr = "La quantité est requise.";
   } else {
     if(is_numeric($_POST["quantity"])){
       $quantitye = test_input($_POST["quantity"]);
     } else {
-      $quantityErre = "you need to enter a number";
+      $quantityErre = "Veuillez entrer un nombre.";
     }
    
   }
@@ -27,12 +27,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["price"])) {
-      $priceErre = "price is required";
+      $priceErre = "Le prix est requis.";
     } else {
       if(is_numeric($_POST["price"])){
         $pricee = test_input($_POST["price"]);
       } else {
-        $priceeErr = "you need to enter a number";
+        $priceeErr = "Veuillez entrer un nombre.";
       }
      
     }
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["gender"])) {
-    $gendereErr = "Gender is required";
+    $gendereErr = "Le genre est requis.";
   } else {
     $gendere = test_input($_POST["gender"]);
   }
@@ -48,14 +48,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["color"])) {
-      $coloreErr = "color is required";
+      $coloreErr = "La couleur est requise.";
     } else {
       $colore = test_input($_POST["color"]);
     }
     }
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if (empty($_POST["size"])) {
-        $sizeeErr = "size is required";
+        $sizeeErr = "La taille est requise.";
       } else {
         $sizee = test_input($_POST["size"]);
       }
@@ -88,14 +88,14 @@ if(isset($_POST["insert"]))
       mysqli_query($link, $querye);
   
       if(move_uploaded_file($_FILES["image"]["tmp_name"],$targete)){
-        $msg = "product added";
+        $msg = "Produit ajouté";
       }
       else{
-      $msg = "something went rong. Try again";
+      $msg = "Un problème est survenu. Veuillez réessayer.";
       }      
 
      } else {
-       $msg = "product already exist";
+       $msg = "Ce produit existe déjà.";
      }
 
    
@@ -111,7 +111,7 @@ if(isset($_POST["insert"]))
 
 <div class = "fluid-container background-h2">
 <div style="margin-top:5px;">
-<h2>Categories</h2>
+<h2>Catégories</h2>
 </div>
 </div>
 <style>
@@ -183,7 +183,7 @@ $resulta = mysqli_query($link, $sqla);
     ?>
     <div style="margin-top:3%;margin-bottom:3%;margin-left:25%;margin-right:25%;font-size:200%;" id="<?php echo $category."id" ?>">
     <?php echo $category ?>
-    <button style="float:right;" class="btn btn-outline-secondary" value="<?php echo $category ?>" onclick="remove_category(this.value)">remove</button>
+    <button style="float:right;" class="btn btn-outline-secondary" value="<?php echo $category ?>" onclick="remove_category(this.value)">Supprimer</button>
     </div>
 <?php
   }}  
@@ -193,31 +193,31 @@ $resulta = mysqli_query($link, $sqla);
   <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 		<input style="margin-top:3%;margin-bottom:1%;margin-left:30%;margin-right:30%;width: 40%;" id="new_category" type="text" placeholder="Category" ><br>
 	</form>
-  <button style="margin-left:30%;margin-right:30%;float:right;padding-left:15px;padding-right:15px;padding-top:10px;padding-bottom:10px;"  onclick="add_category()" >add category</button>
+  <button style="margin-left:30%;margin-right:30%;float:right;padding-left:15px;padding-right:15px;padding-top:10px;padding-bottom:10px;"  onclick="add_category()" >Ajouter une catégorie</button>
 </div>
 
   <div id="category_info" >
-  <button style="margin-left:30%;margin-right:30%;float:right;padding-left:15px;padding-right:15px;padding-top:10px;padding-bottom:10px;"  onclick="later()" >Later</button>
+  <button style="margin-left:30%;margin-right:30%;float:right;padding-left:15px;padding-right:15px;padding-top:10px;padding-bottom:10px;"  onclick="later()" >Plus tard</button>
 
   <form id="connexion_form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
 
-  <label for="name">product name</label><br>
+  <label for="name">Nom du produit</label><br>
   <input id="inputs" type="text" name="name"><br>
   <div style="color:red;text-align:center"><?php echo $nameeErr ?></div><br>
 
-  <label for="quantity">qantity</label><br>
+  <label for="quantity">Quantité</label><br>
   <input id="inputs" type="text" name="quantity"><br>
   <div style="color:red;text-align:center"><?php  echo $quantityeErr ?></div><br>
 
-  <label for="price">price</label><br>
+  <label for="price">Prix</label><br>
   <input id="inputs" type="text" name="price"><br>
   <div style="color:red;text-align:center"><?php echo $priceeErr ?></div><br>
 
-  <p>category</p>
+  <p>Catégorie</p>
   <input id="radio" type="radio"  name="gender" checked>
   <label id="category_in" for="male" ></label>
 
-  <p>size</p> 
+  <p>Taille</p> 
   <input id="radio" type="radio"  name="size" value="S">
   <label for="S"> S </label>
   <input id="radio" type="radio"  name="size" value="M">
@@ -226,12 +226,12 @@ $resulta = mysqli_query($link, $sqla);
   <label for="L"> L </label><br>
   <div style="color:red;text-align:center"><?php echo $sizeeErr ?></div><br>
 
-  <label for="color">color</label><br>
+  <label for="color">Couleur</label><br>
   <input id="color" type="color"  name="color"><br>
   <div style="color:red;text-align:center"><?php echo $coloreErr ?></div><br>
 
 
-  <label for="image">product image</label>
+  <label for="image">Image du produit</label>
   <input style="float:right;" type="file"  name="image"><br>
 
   <div style="color:red;text-align:center"><?php echo $msg ?></div><br>
