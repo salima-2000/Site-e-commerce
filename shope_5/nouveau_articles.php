@@ -80,7 +80,7 @@ if (mysqli_num_rows($result) > 0) {
         
         </p>
         <?php if($client_id===1){ ?>
-        <button style="float:right;" class="btn btn-outline-secondary" value="<?php echo $article_id ?>" onclick="remove_article(this.value)">remove</button>
+        <button style="float:right;" class="btn btn-outline-secondary" value="<?php echo $article_id ?>" onclick="remove_article(this.value)">Supprimer</button>
         <?php  } ?>
         
 				
