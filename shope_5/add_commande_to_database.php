@@ -6,7 +6,7 @@ $color = $size = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (empty($_POST["color"])) {
-    $colorErr = "Name is required";
+    $colorErr = "Le nom est requis";
   } else {
     $color = $_POST["color"];
   }
@@ -14,7 +14,7 @@ if (empty($_POST["color"])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["size"])) {
-    $sizeErr = "Name is required";
+    $sizeErr = "Le nom est requis";
   } else {
     $size = test_input($_POST["size"]);
    
@@ -55,17 +55,17 @@ if(isset($_POST["insert"]))
       $query2 = "INSERT INTO commandes(fk_client_id,fk_product_id,quantity) VALUES ('$client_id','$product_id',1)";  
       mysqli_query($link, $query2);  
     } else {
-      $error_commande = "already commanded";
+      $error_commande = "Déjà commandé";
     }
     
   } 
 
   } else {
-    $error_commande = "not avaliable with that size and color";
+    $error_commande = "Non disponible dans cette taille et couleur";
   }
 
 } else {
-  $error_commande = "you need to connect";
+  $error_commande = "Vous devez vous connecter";
 }
   
  
