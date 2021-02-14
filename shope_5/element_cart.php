@@ -9,11 +9,11 @@
                         <img src='products_images\<?php echo $product_image ?>'>
                         <div>
                             <p><?php echo"$product_name"?></p>
-                            <small>category: <?php echo"$category"?></small><br>
-                            <small >color:<span style="margin-left:10px;padding-right:40px;;background-color:<?php echo"$product_color"?>;color:<?php echo"$product_color"?>;">.</span></small><br>
-                            <small>size: <?php echo"$product_size"?></small><br>
+                            <small>Catégorie: <?php echo"$category"?></small><br>
+                            <small >Couleur:<span style="margin-left:10px;padding-right:40px;;background-color:<?php echo"$product_color"?>;color:<?php echo"$product_color"?>;">.</span></small><br>
+                            <small>Taille: <?php echo"$product_size"?></small><br>
                             <?php if($etat==="non commander"){ ?>
-                            <button value="<?php echo $commande_id ?>" onclick="remove_commande(this.value)">Remove</button>
+                            <button value="<?php echo $commande_id ?>" onclick="remove_commande(this.value)">Supprimer</button>
                             <?php       
                                 }
                             ?>
