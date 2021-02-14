@@ -28,8 +28,8 @@
         <input type="password" id="inputs" name="confirm_password" placeholder="Confirmation De Mot De Passe"required><br>		
 		<div style="color:red;text-align:center"><?php echo  $confirm_password_err ; ?></div><br>
 
-        <input type="submit" class="btn btn-primary" value="Submit" id="submit">
-        <input type="reset" class="btn btn-default" value="Reset" id="submit">
+        <input type="submit" class="btn btn-primary" value="Soumettre" id="submit">
+        <input type="reset" class="btn btn-default" value="Réinitialiser" id="submit">
 		
 		
 	</form>
