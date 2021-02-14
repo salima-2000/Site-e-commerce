@@ -8,7 +8,7 @@ $resultat = $_REQUEST["q"];
 $res = explode(".",$resultat);
 $commande_id = $res[0];
 $quantity = $res[1];
-$stat = "waiting for validation";
+$stat = "En attente de validation";
 
 
 $sql = "UPDATE commandes
@@ -44,9 +44,9 @@ if (mysqli_num_rows($result2) > 0) {
             <img src='products_images\<?php echo $product_image ?>'>
             <div>
                 <p><?php echo"$product_name"?></p>
-                <small>category: <?php echo"$category"?></small><br>
-                <small >color:<span style="margin-left:10px;padding-right:40px;;background-color:<?php echo"$product_color"?>;color:<?php echo"$product_color"?>;">.</span></small><br>
-                <small>size: <?php echo"$product_size"?></small><br>
+                <small>Catégorie: <?php echo"$category"?></small><br>
+                <small >Couleur:<span style="margin-left:10px;padding-right:40px;;background-color:<?php echo"$product_color"?>;color:<?php echo"$product_color"?>;">.</span></small><br>
+                <small>Taille: <?php echo"$product_size"?></small><br>
                 
             </div>
         </div>
