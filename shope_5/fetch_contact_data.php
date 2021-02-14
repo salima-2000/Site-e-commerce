@@ -46,7 +46,7 @@ if(isset($_POST["insert"]))  {
           $contact_query = "INSERT INTO messagerie(expediteur,message,email,subject)
           VALUES ('$contact_name','$contact_message','$contact_email','$contact_subject')";  
           mysqli_query($link, $contact_query);
-          $contact_msg="message envoyer";
+          $contact_msg="Message envoyé";
           
       
      }  
