@@ -10,7 +10,7 @@ $contact_nameErr=$contact_messageErr=$contact_emailErr=$contact_subjectErr="";
 $contact_msg="";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name"])) {
-        $contact_nameErr = "Name is required";
+        $contact_nameErr = "Le nom est requis";
       } else {
         $contact_name = test_input($_POST["name"]);
       }
@@ -18,21 +18,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["message"])) {
-        $contact_messageErr = "Message is required";    
+        $contact_messageErr = "Le message est requis.";    
     } else {
         $contact_message = test_input($_POST["message"]);
     }
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["email"])) {
-        $contact_emailErr = "Email is required";
+        $contact_emailErr = "Email is requis";
     } else {
         $contact_email = test_input($_POST["email"]);
     }
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($_POST["subject"]==="na") {
-        $contact_subjectErr = "Subject is required";
+        $contact_subjectErr = "Sujet est requis";
         
     } else {
         $contact_subject = test_input($_POST["subject"]);
@@ -52,7 +52,7 @@ if(isset($_POST["insert"]))  {
           $contact_query = "INSERT INTO messagerie(expediteur,message,email,subject)
           VALUES ('$contact_name','$contact_message','$contact_email','$contact_subject')";  
           mysqli_query($link, $contact_query);
-          $contact_msg="message envoyer";
+          $contact_msg="Message envoyé";
           
       
      }  
@@ -90,27 +90,27 @@ body{
                                   <div class="col-md-6">
                                       <div class="form-group">
                                           <label for="name">
-                                              Name</label>
-                                          <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                              Nom</label>
+                                          <input type="text" name="name" class="form-control" id="name" placeholder="Entrer le nom" required="required" />
                                           <?php echo $contact_nameErr ?>
                                       </div>
                                       <div class="form-group">
                                           <label for="email">
-                                              Email Address</label>
+                                              Adresse email</label>
                                           <div class="input-group">
                                               <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                               </span>
-                                              <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required="required" /></div>
+                                              <input type="email" class="form-control" name="email" id="email" placeholder="Entrer l'email" required="required" /></div>
                                               <?php echo $contact_emailErr ?>
                                       </div>
                                       <div class="form-group">
                                           <label for="subject">
-                                              Subject</label>
+                                              Sujet</label>
                                           <select id="subject" name="subject" class="form-control" required="required">
-                                              <option value="na" selected="">Choose One:</option>
+                                              <option value="na" selected="">Choisir:</option>
                                               <option value="service">Services</option>
                                               <option value="suggestions">Suggestions</option>
-                                              <option value="product">help</option>
+                                              <option value="product">Aide</option>
                                           </select>
                                           <div style="color:red;" ><?php echo $contact_subjectErr ?></div>
                                       </div>
@@ -126,7 +126,7 @@ body{
                                       </div>
                                   </div>
                                   <div style="margin-top:3%;margin-bottom:3%;" class="col-md-12">
-                                      <input type="submit" name="insert" class="btn btn-primary pull-right" id="btnContactUs" value="Send Message">
+                                      <input type="submit" name="insert" class="btn btn-primary pull-right" id="btnContactUs" value="Envoyer">
                                 
                                   </div>
                               </div>
@@ -135,7 +135,7 @@ body{
                       </div>
                       <div class="col-md-4">
                           <form>
-                          <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                          <legend><span class="glyphicon glyphicon-globe"></span>Notre bureau</legend>
                           <address>
                               <strong>INPT</strong><br>
                             ASEDS G6<br>
