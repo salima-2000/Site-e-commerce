@@ -11,7 +11,7 @@ $msg = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (empty($_POST["title"])) {
-    $titleErr = "Title is required";
+    $titleErr = "Le titre esr requis";
   } else {
     $title = test_input($_POST["title"]);
   }
@@ -20,7 +20,7 @@ if (empty($_POST["title"])) {
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["body"])) {
-    $bodyErr = "Article is required";
+    $bodyErr = "Article est requis";
   } else {
     $body = test_input($_POST["body"]);
   }
@@ -52,14 +52,14 @@ if(isset($_POST["insert"]))
       mysqli_query($link, $query);
   
       if(move_uploaded_file($_FILES["image"]["tmp_name"],$target)){
-        $msg = "Article added";
+        $msg = "Article ajouté";
       }
       else{
-      $msg = "something went rong. Try again";
+      $msg = "Une erreur s'est produite. Veuillez réessayer";
       }      
 
      } else {
-       $msg = "Article already exist";
+       $msg = "L'article existe déjà";
      }
    
     }
