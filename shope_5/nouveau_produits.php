@@ -76,7 +76,7 @@ if (mysqli_num_rows($resulti) > 0) {
 		<p  style="width: 30%;" >price: <?php echo $product_price ?>$</p>
 		<div>
 		<?php if($client_id===1){ ?>
-		<button style="float:right;margin-top:-20px" class="btn btn-outline-secondary" value="<?php echo $product_name ?>" onclick="remove_product(this.value)">remove</button>
+		<button style="float:right;margin-top:-20px" class="btn btn-outline-secondary" value="<?php echo $product_name ?>" onclick="remove_product(this.value)">Supprimer</button>
 			<?php } echo "" ;?>
 		</div>					
 	</div>	
