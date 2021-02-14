@@ -20,13 +20,13 @@ document.getElementById("users").innerHTML="<?php echo $users_number ?>";
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
         data.addRows([
-          ['commander', <?php echo $chart_commander ?>],
-          ['non commander', <?php echo $chart_non_commander ?>],
+          ['commandé', <?php echo $chart_commander ?>],
+          ['non commandé', <?php echo $chart_non_commander ?>],
        
         ]);
 
 
-        var options = {'title':'products selected in the cart',
+        var options = {'title':'Produits séléctionnés dans le panier',
                        'width':400,
                        'height':300};
 
@@ -47,14 +47,14 @@ function drawChart2() {
   data2.addColumn('string', 'Topping');
   data2.addColumn('number', 'Slices');
   data2.addRows([
-    ['refused', <?php echo $chart_refused ?>],
-    ['validate', <?php echo $chart_validate ?>],
-    ['waiting for validationg', <?php echo $chart_waiting ?>],
+    ['refusée', <?php echo $chart_refused ?>],
+    ['validée', <?php echo $chart_validate ?>],
+    ['en attente de validation', <?php echo $chart_waiting ?>],
  
   ]);
 
 
-  var options2 = {'title':'stat of commands',
+  var options2 = {'title':'Stat des commandes',
                  'width':400,
                  'height':300};
 
@@ -87,7 +87,7 @@ data3.addRows([
 ]);
 
 
-var options3 = {'title':'sales by category',
+var options3 = {'title':'Ventes par catégorie',
                'width':600,
                'height':500};
 
@@ -110,26 +110,26 @@ function drawBasic() {
       data.addColumn('number', 'Motivation Level');
 
       data.addRows([
-        ['January',<?php echo $January ?>],
-        ['February',<?php echo $February?>],
-        ['march', <?php echo $march?>],
-        ['april',<?php echo $april?>],
-        ['may',<?php echo $may?>],
-        ['june',<?php echo $june?>],
-        ['july',<?php echo $july?>],
-        ['august',<?php echo $august?>],
-        ['september',<?php echo $september?>],
-        ['october',<?php echo $october?>],
-        ['november',<?php echo $november?>],
-        ['december',<?php echo $december?>],
+        ['Janvier',<?php echo $January ?>],
+        ['Février',<?php echo $February?>],
+        ['Mars', <?php echo $march?>],
+        ['Avril',<?php echo $april?>],
+        ['Mai',<?php echo $may?>],
+        ['Juin',<?php echo $june?>],
+        ['Juillet',<?php echo $july?>],
+        ['Août',<?php echo $august?>],
+        ['Septembre',<?php echo $september?>],
+        ['Octobre',<?php echo $october?>],
+        ['Novembre',<?php echo $november?>],
+        ['Décembre',<?php echo $december?>],
  
 
       ]);
 
       var options = {
-        title: 'sales during the year',
+        title: 'Ventes durant l année',
         hAxis: {
-          title: 'monts',
+          title: 'Mois',
           format: 'h:mm a',
           viewWindow: {
             min: [7, 30, 0],
@@ -137,7 +137,7 @@ function drawBasic() {
           }
         },
         vAxis: {
-          title: 'sales benefits with $'
+          title: 'Profit en $'
         }
       };
 
