@@ -1,12 +1,12 @@
 
   <div class = "fluid-container background-h2">        
-    <h2>Messages contacter</h2>
+    <h2>Messages</h2>
   </div>
        
         <table class="table table-striped" align="center">
                     <tr style="font-size:200%;">
-                        <th> Expediteur</th>
-                         <th>Subject</th>
+                        <th> Expéditeur</th>
+                         <th>Sujet</th>
                          <th>Message</th>
                     
                      </tr>
@@ -47,7 +47,7 @@
                 echo $contact_etat ; }
                 ?>
                 </td>
-                <td><button class="btn btn-outline-secondary" value="<?php echo $ide ?>" onclick="remove_message(this.value)">Remove</button></td>
+                <td><button class="btn btn-outline-secondary" value="<?php echo $ide ?>" onclick="remove_message(this.value)">Supprimer</button></td>
               </tr>
 
                 
