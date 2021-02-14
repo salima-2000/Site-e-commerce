@@ -15,7 +15,7 @@ $price_error="";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
+    $nameErr = "Le nom est requis";
   } else {
     $name = test_input($_POST["name"]);
   }
@@ -24,12 +24,12 @@ if (empty($_POST["name"])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["price"])) {
-      $priceErr = "price is required";
+      $priceErr = "Le prix est requis";
     } else {
       if(is_numeric($_POST["price"])){
         $price = test_input($_POST["price"]);
       } else {
-        $priceErr = "you need to enter a number";
+        $priceErr = "Vous devez entrer un nombre";
       }
      
     }
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
+    $genderErr = "Le genre est requis";
   } else {
     $gender = test_input($_POST["gender"]);
   }
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["quantity"])) {
-      $quantityErr = "quantity is required";
+      $quantityErr = "La quantité est requise";
     } else {
         $quantity = $_POST["quantity"];
      
@@ -65,14 +65,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["color"])) {
-      $colorErr = "color is required";
+      $colorErr = "La couleur est requise";
     } else {
       $color = $_POST["color"];
     }
     }
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if (empty($_POST["size"])) {
-        $sizeErr = "size is required";
+        $sizeErr = "La taille est requise";
       } else {
         $size = $_POST["size"];
       }
@@ -120,7 +120,7 @@ if(isset($_POST["insert"]))
      
 
         if(!empty($verify_name) && $price!=$verify_price ){
-          $price_error="Le produit existe deja et le prix non compatible!";
+          $price_error="Le produit existe déjà et le prix non compatible!";
           $error=1;
         }
      
@@ -184,10 +184,10 @@ if(isset($_POST["insert"]))
                 mysqli_query($link, $query);        
               }
         }
-        $msg = "product added";
+        $msg = "Produit ajouté";
       }  
     } else{
-      $msg="properties invalide";
+      $msg="Propriétés invalides";
     }
 
 
@@ -207,7 +207,7 @@ if(isset($_POST["insert"]))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Product</title>
+    <title>Ajouter produit</title>
     <link rel="stylesheet" href="add_product.css">
     <?php include 'links.php'; ?>
 
@@ -265,7 +265,7 @@ if(isset($_POST["insert"]))
 
 
 
-<h3>Proprietées</h3>
+<h3>Proprietés</h3>
 <div id="cara">
 
   <div id="col_im">
@@ -282,21 +282,21 @@ if(isset($_POST["insert"]))
   <div class="col">
   <label for="S"> S </label>
   <input style="margin-right:20px" type="checkbox"  name="size[0][0][]" value="S">
-  <label for="quantity">Qantité</label>
+  <label for="quantity">Quantité</label>
   <input id="quantity" type="text" name="quantity[0][0][]" pattern="[0-9].{0,500}">
   </div>
 
   <div class="col">
   <label for="M"> M </label>
   <input style="margin-right:20px" type="checkbox"  name="size[0][1][]" value="M">
-  <label for="quantity">Qantité</label>
+  <label for="quantity">Quantité</label>
   <input id="quantity" type="text" name="quantity[0][1][]" pattern="[0-9].{0,500}">
   </div>
 
   <div class="col">
   <label for="L"> L </label>
   <input style="margin-right:20px" type="checkbox" name="size[0][2][]" value="L">
-  <label for="quantity">Qantité</label>
+  <label for="quantity">Quantité</label>
   <input id="quantity" type="text" name="quantity[0][2][]" pattern="[0-9].{0,500}">
   </div>
 
