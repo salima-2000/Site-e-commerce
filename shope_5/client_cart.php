@@ -3,9 +3,9 @@
     <table style="margin-top:10%" class="table table-dark table-hover bg-dark">
             <tr> <!--------------->  
 
-                <th><p >Product</p> </th>
-                <th><p style="text-align: center">Quantity</p></th>
-                <th><p style="text-align: center">price</p></th>
+                <th><p >Produit</p> </th>
+                <th><p style="text-align: center">Quantité</p></th>
+                <th><p style="text-align: center">Prix</p></th>
                 <th><p style="text-align: center"></p></th>
 
 
