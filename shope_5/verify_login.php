@@ -14,13 +14,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
    
     if(empty(trim($_POST["email"]))){
-        $email_err = "Please enter email.";
+        $email_err = "Veuillez entrer votre email";
     } else{
         $email = trim($_POST["email"]);
     }
  
     if(empty(trim($_POST["password"]))){
-        $password_err = "Please enter your password.";
+        $password_err = "Veuillez entrer votre mot de passe";
     } else{
         $password = trim($_POST["password"]);
     }
@@ -53,14 +53,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                        
                             header("location: acceuil.php");
                         } else{
-                            $password_err = "The password you entered was not valid.";
+                            $password_err = "Mot de passe invalide";
                         }
                     }
                 } else{
-                    $email_err = "No account found with that username!";
+                    $email_err = "Pas de compte avec ce nom";
                 }
             } else{
-                echo "Oops! Something went wrong. Please try again later!";
+                echo "Un problème est survenu. Veuillez réessayer plus tard!";
             }
 
             mysqli_stmt_close($stmt);
