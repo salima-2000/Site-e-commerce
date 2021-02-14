@@ -6,7 +6,7 @@
         <title>Document</title>
 </head>
 <body>
-<a href="acceuil.php"><button type="button" onclick="deconnecter()" class="btn btn-light">deconnecter</button></a>
+<a href="acceuil.php"><button type="button" onclick="deconnecter()" class="btn btn-light">Se déconnecter</button></a>
 
 </body>
 </html>
