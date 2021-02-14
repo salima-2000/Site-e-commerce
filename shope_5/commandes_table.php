@@ -7,11 +7,11 @@
     <table class="table table-striped">   
             <tr> 
      
-                <th><h3>user name</h3> </th>
-                <th> <h3>product information</h3></th>
-                <th> <h3>quantity</h3> </th>
-                <th> <h3>benefits</h3> </th>
-                <th> <h3>stat</h3> </th>
+                <th><h3>Nom d'utilisateur</h3> </th>
+                <th> <h3>Information produit</h3></th>
+                <th> <h3>Quantité</h3> </th>
+                <th> <h3>Profit</h3> </th>
+                <th> <h3>Stat</h3> </th>
 
             </tr>
             <?php
@@ -158,9 +158,9 @@
                     <div class='cart-info'>
                         <div>
                             <p style="color:black;"><?php echo"$product_name"?></p>
-                            <small>category: <?php echo"$category"?></small><br>
-                            <small>color: <span style="margin-left:10px;padding-right:40px;;background-color:<?php echo"$product_color"?>;color:<?php echo"$product_color"?>;">.</span></small><br>
-                            <small>size: <?php echo"$product_size"?></small><br>
+                            <small>Catégorie: <?php echo"$category"?></small><br>
+                            <small>Couleur: <span style="margin-left:10px;padding-right:40px;;background-color:<?php echo"$product_color"?>;color:<?php echo"$product_color"?>;">.</span></small><br>
+                            <small>Taille: <?php echo"$product_size"?></small><br>
                           
                         </div>
                     </div>
