@@ -96,7 +96,7 @@ if (mysqli_num_rows($result) > 0) {
 </div>
 
 <div class="container" style="margin-bottom:3%">
-<a href="articles.php" id="read-more">Read More>></a>
+<a href="articles.php" id="read-more">Lire plus>></a>
 </div>
 <script>
 	function remove_article(str) {
