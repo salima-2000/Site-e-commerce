@@ -6,7 +6,7 @@ try{
     $pdo=new PDO('mysql:host=localhost;port=3306;dbname=shop','root' ,'');
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
   }catch (PDOException $e){
-    echo "connection failed".$e->getMessage();
+    echo "Connection échouée".$e->getMessage();
   }
 
 
@@ -49,11 +49,11 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
       $error1="le mot de passe est incorrect";
     }
     if(!$newPswrd){
-      $error2="veuillez enter nouveau un mot de passe";
+      $error2="veuillez entrer nouveau un mot de passe";
     }
     if($newPswrd){
       if(!isPassword($newPswrd)){
-        $error3="mot de passe invalid";
+        $error3="mot de passe invalide";
       } else{
         if ($newPswrd!=$confPswrd){
         $error4="Les mots de passe ne correspondent pas";
@@ -134,7 +134,7 @@ function isPassword($password){
         <br>
         <?php if(isset($error0) || isset($error1) || isset($error2) ||isset($error3)  || isset($error4)){?>
           <div class="alert alert-danger">
-             <?php echo "Modifications non enregistreés" ?>
+             <?php echo "Modifications non enregistrées" ?>
           </div>
         <?php }?>
         
