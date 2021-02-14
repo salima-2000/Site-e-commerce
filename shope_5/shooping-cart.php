@@ -20,7 +20,7 @@ $result = mysqli_query($link, $sql);
 <head>
 	<meta charset="utf-8">
 	<meta  name=" viewport" charset="utf-8" content="width=device-width" initiale-scale=1.0>
-    <title>Shooping cart -ASEDS SHOP| Ecomerce Website</title>
+    <title>Panier -ASEDS SHOP| Ecommerce Website</title>
     <link rel="stylesheet" href="shooping-cart.css">
     <?php include 'links.php'; ?>
    
@@ -35,7 +35,7 @@ $result = mysqli_query($link, $sql);
         include 'client_cart.php';
     } else{ 
       ?>
-      <h1 style="margin-top:20%;margin-bottom:20%;text-align:center;color:red;font-size:500%">you need to subscrib!!!</h1>
+      <h1 style="margin-top:20%;margin-bottom:20%;text-align:center;color:red;font-size:300%">Connectez-vous ou inscrivez-vous pour accéder au panier</h1>
       <?php
       
     }
