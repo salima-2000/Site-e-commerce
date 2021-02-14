@@ -27,7 +27,7 @@ $category = $_GET['category'];
 	<h1 id="category" ><?php $category ?> </h1>
 	<h2 id="Servez-vous" ><em>Servez-vous</em></h2><br>
 	<?php if($client_id === 1){ ?>
-    <a style="margin-left:45%;margin-bottom:50%;" href="add_product.php" class = "text-center"><button type="button" class="btn btn-outline-secondary">add a product</button></a>
+    <a style="margin-left:45%;margin-bottom:50%;" href="add_product.php" class = "text-center"><button type="button" class="btn btn-outline-secondary">Ajouter un produit</button></a>
     <?php }?>
 
 	
@@ -57,7 +57,7 @@ if (mysqli_num_rows($result) > 0) {
 		<p >price: <?php echo $product_price ?>$</p>
 		<div>
 		<?php if($client_id===1){ ?>
-		<button style="float:right;margin-top:-20px" class="btn btn-outline-secondary" value="<?php echo $product_name ?>" onclick="remove_product(this.value)">remove</button>
+		<button style="float:right;margin-top:-20px" class="btn btn-outline-secondary" value="<?php echo $product_name ?>" onclick="remove_product(this.value)">Supprimer</button>
 			<?php } echo "" ;?>
 		</div>					
 	</div>	
