@@ -1,12 +1,12 @@
 <div class = "fluid-container background-h2">        
-    <h2>users table</h2>
+    <h2>Table d'utilisateurs</h2>
   </div>
       <table class="table table-striped">   
             <tr> 
-              <th><h3>username</h3> </th>
-              <th> <h3>email</h3></th>
-              <th> <h3>phone number</h3> </th>
-              <th> <h3>Delete</h3> </th>
+              <th><h3>Nom d'utilisateurs</h3> </th>
+              <th> <h3>Email</h3></th>
+              <th> <h3>Numéro de téléphone</h3> </th>
+              <th> <h3>Supprimer</h3> </th>
 
             </tr>
           <?php
@@ -30,7 +30,7 @@
                 <td><?php echo $client_name?></td>
                 <td><?php echo $email?></td>
                 <td><?php echo $client_phone?></td>
-                <td><button class="btn btn-outline-secondary" value="<?php echo $client_id ?>" onclick="remove_user(this.value)">Delete</button></td>
+                <td><button class="btn btn-outline-secondary" value="<?php echo $client_id ?>" onclick="remove_user(this.value)">Supprimer</button></td>
               </tr>
 
                 
