@@ -11,7 +11,7 @@ $msg = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (empty($_POST["title"])) {
-    $titleErr = "Le titre esr requis";
+    $titleErr = "Le titre est requis";
   } else {
     $title = test_input($_POST["title"]);
   }
@@ -69,7 +69,7 @@ if(isset($_POST["insert"]))
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +82,7 @@ if(isset($_POST["insert"]))
 <?php include 'header.php';?>
 
     <form id="connexion_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
-		    <input id="title" type="text" name="title" placeholder="Title"  pattern="[A-Za-z0-9].{0,500}"><br>
+		    <input id="title" type="text" name="title" placeholder="Titre"  pattern="[A-Za-z0-9].{0,500}"><br>
         <div style="color:red;text-align:center"><?php echo $titleErr ; ?></div><br>
         <textarea id="body" rows="4" cols="50" name="body" form="connexion_form" placeholder="Article" pattern="[A-Za-z0-9].{0,100000}"></textarea><br> 
         <div style="color:red;text-align:center"><?php echo $bodyErr ; ?></div><br>
