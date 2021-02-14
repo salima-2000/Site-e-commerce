@@ -237,7 +237,7 @@ $resulta = mysqli_query($link, $sqla);
   <div style="color:red;text-align:center"><?php echo $msg ?></div><br>
 
 
-  <input type="submit" value="add product"  name="insert" id="submit"><br>
+  <input type="submit" value="Ajouter produit"  name="insert" id="submit"><br>
 
 
 </form>
