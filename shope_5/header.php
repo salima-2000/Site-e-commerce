@@ -31,11 +31,11 @@ $resultn2 = mysqli_query($link, $sqln2);
                     <?php include 'search_bar.php'; ?>
               
                 <?php if(!empty($_SESSION)){ ?>
-                    <a href="deconnecter.php"><button type="button" value="deconnected" id="deconnecter" class="btn btn-light">deconnecter</button></a>
+                    <a href="deconnecter.php"><button type="button" value="deconnected" id="deconnecter" class="btn btn-light">Se déconnecter</button></a>
                     <a href="profil.php" class="btn btn-secondary btn-lg" ><?php echo $username?></a>
                 <?php } else {?>
                     <a href="login.php" ><button type="button" id="connecter" class="btn btn-light"  >Se connecter</button></a>
-                    <a href="register.php"><button type="button" id="creer" class="btn btn-light">Creer un compte</button></a>
+                    <a href="register.php"><button type="button" id="creer" class="btn btn-light">Créer un compte</button></a>
 
                 <?php }?>
                 <?php if($client_id!=1){ ?>
@@ -56,7 +56,7 @@ $resultn2 = mysqli_query($link, $sqln2);
                 <li class="nav-item"> <a class="nav-link" href="acceuil.php"><i class="bi bi-house-door-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                     <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                  </svg>Acceuil</a></li>
+                  </svg>Accueil</a></li>
                   <?php
                     if (mysqli_num_rows($resultn2) > 0) {
                     while ($rown2 = $resultn2->fetch_assoc()) {
