@@ -3,12 +3,12 @@
       <div class="container">
       <table class="table table-striped">   
             <tr> 
-              <th><h3>color</h3></th>
-              <th><h3>size</h3></th>
-              <th><h3>quantity</h3></th>
-              <th><h3>update quantity</h3></th>
-              <th><h3>modify</h3></th>
-              <th><h3>Delete</h3></th>
+              <th><h3>Couleur</h3></th>
+              <th><h3>Taille</h3></th>
+              <th><h3>Quantité</h3></th>
+              <th><h3>Màj la quatité</h3></th>
+              <th><h3>Modifier</h3></th>
+              <th><h3>Supprimer</h3></th>
             </tr>
             <?php
 
@@ -34,8 +34,8 @@
                 <td><?php echo $asize?></td>
                 <td id="<?php echo $aproduct_id?>"><?php echo $aquantity?></td>
                 <td><input id="new_quantity" style="text-align:center;" type="text"></td>
-                <td ><button class="btn btn-outline-secondary" value="<?php echo $aproduct_id?>" onclick="modify_quantity(this.value)">Modify</button></td>
-                <td><button class="btn btn-outline-secondary" value="<?php echo $aproduct_id ?>" onclick="remove_product_color(this.value)">Delete</button></td>
+                <td ><button class="btn btn-outline-secondary" value="<?php echo $aproduct_id?>" onclick="modify_quantity(this.value)">Modifier</button></td>
+                <td><button class="btn btn-outline-secondary" value="<?php echo $aproduct_id ?>" onclick="remove_product_color(this.value)">Supprimer</button></td>
               </tr>
 
                 
