@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
    
     if(empty(trim($_POST["nom"]) . " " . trim($_POST["prenom"]))){
-        $username_err = "Please enter a username.";
+        $username_err = "Veuillez entrer un nom d'utilisateur.";
     } else {
 
         $sql = "SELECT client_id FROM clients WHERE client_name = ?";
@@ -29,19 +29,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 mysqli_stmt_store_result($stmt);
                 
                 if(mysqli_stmt_num_rows($stmt) == 1){
-                    $username_err = "This username is already taken.";
+                    $username_err = "Ce nom d'utilisateur est déjà pris.";
                 } else{
                     $username = trim($_POST["nom"]) . " " . trim($_POST["prenom"]);
                 }
             } else{
-                echo "Oops! Something went wrong. Please try again later.";
+                echo "Un problème est survenu. Veuillez réessayer plus tard.";
             }
 
             mysqli_stmt_close($stmt);
         }
     }
     if(empty(trim($_POST["email"]))){
-        $email_err = "Please enter your email.";
+        $email_err = "Veuillez entrer votre email.";
     } else {
 
         $sql = "SELECT client_id FROM clients WHERE email = ?";
@@ -57,12 +57,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 mysqli_stmt_store_result($stmt);
                 
                 if(mysqli_stmt_num_rows($stmt) == 1){
-                    $email_err = "This email is already taken.";
+                    $email_err = "Cet email est déjà pris.";
                 } else{
                     $email = trim($_POST["email"]);
                 }
             } else{
-                echo "Oops! Something went wrong. Please try again later.";
+                echo "Un problème est survenu. Veuillez réessayer plus tard.";
             }
 
     
@@ -72,27 +72,27 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
 
     if(empty(trim($_POST["password"]))){
-        $password_err = "Please enter a password.";     
+        $password_err = "Veuillez entrer un mot de passe.";     
     } elseif(strlen(trim($_POST["password"])) < 6  ){
-        $password_err = "Password must have atleast 6 characters .";
+        $password_err = "Le mot de passe doit comporter au moins 6 caractères.";
     } else{
         $password = trim($_POST["password"]);
     }
     
 
     if(empty(trim($_POST["confirm_password"]))){
-        $confirm_password_err = "Please confirm password.";     
+        $confirm_password_err = "Veuillez confirmer le mot de passe.";     
     } else{
         $confirm_password = trim($_POST["confirm_password"]);
         if(empty($password_err) && ($password != $confirm_password)){
-            $confirm_password_err = "Password did not match.";
+            $confirm_password_err = "Le mot de passe ne correspond pas.";
         }
     }
 
     if(empty(trim($_POST["phone_number"]))){
-        $phone_number_err = "Please enter your phone number.";     
+        $phone_number_err = "Veuillez entrer votre numéro de téléphone.";     
     } elseif(strlen(trim($_POST["phone_number"])) != 10  ){
-        $phone_number_err = "phone number must have  10 characters .";
+        $phone_number_err = "Le numéro de téléphone doit avoir 10 charactères.";
     } else{
         $phone_number = trim($_POST["phone_number"]);
     }
@@ -116,7 +116,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                
                 header("location: login.php");
             } else{
-                echo "Something went wrong. Please try again later.";
+                echo "Un problème est survenu. Veuillez réessayer plus tard.";
             }
 
             mysqli_stmt_close($stmt);
