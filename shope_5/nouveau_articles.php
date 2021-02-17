@@ -21,7 +21,6 @@
     margin-left: 2.5%;
     margin-right: 2.5%;
     margin-bottom: 2vw;
-   
   }
 
   #title{
