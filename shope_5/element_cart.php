@@ -68,7 +68,7 @@
                             <p style="text-align: center;margin-top:20%;"><?php echo $etat; ?></p>
                             <button style="" class="btn btn-light" type="button" value="<?php echo $commande_id ?>" onclick="done_refused(this.value)">OK</button>
                         <?php 
-                    } 
+                             } 
                     ?>
                        
                    
