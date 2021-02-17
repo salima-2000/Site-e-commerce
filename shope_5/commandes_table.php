@@ -3,8 +3,7 @@
 <h2>Table de commandes</h2>
 </div>
 </div>
-
-    <table class="table table-striped">   
+<table class="table table-striped">   
             <tr> 
      
                 <th><h3>Nom d'utilisateur</h3> </th>
