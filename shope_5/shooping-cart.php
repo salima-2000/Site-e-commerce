@@ -53,8 +53,9 @@ function commande(str) {
   var display = d.options[d.selectedIndex].text;
  
  var resultat = str+"."+display+"."+<?php echo $x ?>;
-
+ 
   var xhttp = new XMLHttpRequest();
+	
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById(str+"id").innerHTML =
